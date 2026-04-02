@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"],
+      "bun:bundle": ["./shims/bun-bundle.d.ts"],
+      "@ant/claude-for-chrome-mcp": ["./stubs/@ant/claude-for-chrome-mcp/index.ts"],
+      "@ant/computer-use-mcp": ["./stubs/@ant/computer-use-mcp/index.ts"],
+      "@anthropic-ai/sandbox-runtime": ["./stubs/@anthropic-ai/sandbox-runtime/index.ts"],
+      "color-diff-napi": ["./stubs/color-diff-napi/index.ts"],
+      "modifiers-napi": ["./stubs/modifiers-napi/index.ts"]
+    },
+    "types": ["bun-types"]
+  },
+  "include": ["src/**/*", "shims/**/*", "stubs/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
