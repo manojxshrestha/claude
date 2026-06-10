@@ -57,7 +57,7 @@ Use free LLM providers instead of Anthropic's paid API:
 
 ```bash
 # Clone the repository
-git clone https://github.com/fazxes/claude-code.git
+git clone https://github.com/manojxshrestha/claude-code.git
 cd claude-code
 
 # Install dependencies
