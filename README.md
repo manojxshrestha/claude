@@ -58,9 +58,16 @@ Use free LLM providers instead of Anthropic's paid API:
 ```bash
 # Clone the repository
 git clone https://github.com/manojxshrestha/claude.git
-cd claude-code
 
-# Install dependencies
+cd claude
+
+# Install Bun
+curl -fsSL https://bun.sh/install | bash
+
+# Reload shell
+source ~/.bashrc
+
+# make sure dependencies are installed
 bun install
 
 # Build the CLI
